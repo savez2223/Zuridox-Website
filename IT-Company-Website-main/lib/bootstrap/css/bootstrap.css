@@ -6154,7 +6154,8 @@ a.close.disabled {
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
-  z-index: 1;
+  /* change z index 0 to 1 for scrolling */
+  z-index: 0;
   opacity: 1;
 }
 

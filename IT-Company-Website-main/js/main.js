@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
     const counters = document.querySelectorAll('.counter');
-    const speed = 120;
+    const speed = 0;
     counters.forEach(counter => {
 	const updateCount = () => {
 		const target = +counter.getAttribute('data-target');
@@ -43,14 +43,17 @@ $(document).ready(function(){
         autoplay: true,
         dots: true,
         loop: true,
-        responsive: { 0: {items: 2}, 768: {items: 4}, 900: {items: 6} }
+        responsive: { 1: {items: 2}, 768: {items: 4}, 900: {items: 6} }
     });
 
     $(".testimonials-carousel").owlCarousel({
+        // make true autoplay and dots both for scrolling and uncomment responsive s per your need 
         autoplay: true,
         dots: true,
         loop: true,
-        responsive: { 0: {items: 1}, 576: {items: 2}, 768: {items: 3}, 992: {items: 4} }
+        responsive: { 0: {items: 1}, 576: {items: 2}
+        , 768: {items: 3}, 992: {items: 4}
+     }
     });
     
 })(jQuery);
